@@ -11,14 +11,17 @@ prefix   ?= /usr/local
 async_HEADERS 	   = async/async.h \
 					 async/EventLoop.h \
 					 async/Timer.h \
-					 async/Idle.h 
+					 async/Idle.h \
+					 async/IpAddress.h
 
 async_SOURCES      = async/EventLoop.cpp \
 					 async/Timer.cpp \
-					 async/Idle.cpp
+					 async/Idle.cpp \
+					 async/IpAddress.cpp
 
 async_test_SOURCES = test/main.cpp \
-				     test/basic_tests.cpp
+				     test/basic_tests.cpp \
+					 test/udp_tests.cpp
 
 all: libasync.a
 

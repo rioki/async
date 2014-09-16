@@ -5,5 +5,7 @@
 #include "EventLoop.h"
 #include "Timer.h"
 #include "Idle.h"
+#include "IpAddress.h"
+#include "UdpSocket.h"
 
 #endif
